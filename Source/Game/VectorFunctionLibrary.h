@@ -14,10 +14,10 @@ class GAME_API UVectorFunctionLibrary : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
 
-	UFUNCTION(BlueprintPure)
+	UFUNCTION(BlueprintPure, Category="Vector Math")
 	static float getDistance(const FVector a, const FVector b);
 
-	UFUNCTION(BlueprintPure)
+	UFUNCTION(BlueprintPure, Category = "Vector Math")
 	static FVector getPointAtLookDistance(const FVector lookDirection, const FVector lookLocation, const float holderToObjectDistance, const FVector objectLocation);
 	
 };
