@@ -17,9 +17,6 @@ class GAME_API UVectorFunctionLibrary : public UBlueprintFunctionLibrary
 	UFUNCTION(BlueprintPure, Category = "Vector Math")
 	static float getDistance(const FVector a, const FVector b);
 
-	UFUNCTION(BlueprintCallable, Category = "Vector Math")
-	float getDistanceCallable(const FVector a, const FVector b) { return getDistance(a, b); }
-
 	UFUNCTION(BlueprintPure, Category = "Vector Math")
 	static FVector getPointAtLookDistance(const FVector lookDirection, const FVector lookLocation, const float holderToObjectDistance, const FVector objectLocation);
 	
